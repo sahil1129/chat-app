@@ -26,7 +26,7 @@ const server = http.createServer(app)
 // }).catch((err) => console.error('Database connection error:', err));
 
 app.get("/",(req,res)=>{
-    res.json({"message":"Server is running","status":200})
+    res.json({"message":"Server is running on github actions workflows wow","status":200})
 })
 
 const io = new Server(server, {
